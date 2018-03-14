@@ -1,0 +1,9 @@
+<view>
+
+  <view>
+    <input value="{{inputTxt}}" id="acc" type='text' placeholder='请输入用户名'                 bindblur="getAccFunc"></input>
+    <input type='password' placeholder='密码' bindblur="getPwdFunc"></input>
+    <button size="mini" bindtap='loginBtnFunc'>登录</button>
+  </view>
+
+</view>

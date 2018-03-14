@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view>
+  <view class='headerNav'>
+    <text class='header_city'>成都</text>
+    <text class='header_nav'>热映</text>
+    <text class='header_hot'>待映</text>
+    <icon type="search" class='search_btn' size="24" color='red' />
+  </view>
+  <view>
+    <view wx:for="{{filmList}}" wx:key="index" class='movielist' >
+      <image src="{{item.film_covers[0].film_covers}}" mode="aspectFill"></image>
+      <view class='moviemessage' id="{{item._id}}" bindtap="loadDataFunc">
+        <!-- <image src='../../images/dianying2' mode="aspectFill"></image>   -->
+        <text class='moviename' >{{item.name}}</text>
+        <text class='movietype'>{{item.type}}</text>
+        <text class='movietype movieactors'>演员：{{item.actors}}</text>
+      </view>
+      <view>
+        <text class='movieratings'>{{item.ratings}}分</text>
+        <button class='paymovie' id="{{item._id}}" bindtap="loadcinema">购票</button>
+      </view>
+
+    </view>
+
+  </view>
+</view>

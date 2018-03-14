@@ -1,0 +1,62 @@
+<view class='body'>
+  <view>
+    <view class='detailsHeader'>
+      <image src="{{filmList.film_covers[0].film_covers}}" mode="aspectFill"></image>
+      <view class='lodeDetailsDate'>
+        <text>{{filmList.name}}</text>
+        <text>{{filmList.eName}}</text>
+        <text>评分：{{filmList.ratings}}</text>
+        <text>{{filmList.type}}</text>
+        <text>{{filmList.area}}/{{filmList.timeLength}}</text>
+        <text>{{filmList.typreleaseTimee}}</text>
+      </view>
+    </view>
+    <view class='clickBtn'>
+      <button>想看</button>
+      <button>评分</button>
+    </view>
+  </view>
+  <view class='introduction'>
+    {{filmList.introduction}}
+  </view>
+  <view class='movieActors'>
+    <text class='allActors'>演职人员</text>
+    <view class='actorsDate'>
+      <view wx:for="{{filmList.actorsImg}}" wx:key="{{index}}">
+        <image src="{{item.actorImg}}"></image>
+        <text>{{item.actorName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='allBoxOffice'>
+    <text class='movieboxOffice'>票房</text>
+    <view class='boxOffice'>
+      <view>
+        <text>1</text>
+        <text>昨日票房排行</text>
+      </view>
+      <view>
+        <text>42124</text>
+        <text>首周票房</text>
+      </view>
+      <view>
+        <text>{{filmList.boxOffice}}</text>
+        <text>累计票房</text>
+      </view>
+
+    </view>
+    <view class='video_photo'>
+      <text class='movieVideo'>视频和剧照</text>
+      <view class="section section_gap">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+          <view class='scrollBox'>
+            <view class='img' wx:for="{{filmList.atlasImg}}" wx:key="{{index}}">
+              <image src="{{item}}"></image>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <button class='payMovie'>优惠购票</button>
+</view>

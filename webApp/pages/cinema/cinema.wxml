@@ -1,0 +1,33 @@
+<view>
+  <view class='headerNav'>
+    <text wx:for="{{today}}" wx:key="{{index}}">{{item}}</text>
+  </view>
+  <view>
+    <view class='cinemalist' wx:for="{{cinemaList}}" wx:key="{{index}}">
+      <view>
+        <view>
+          <text class='cinemaName'>{{item.name}}</text>
+          <text class='cinemaMoney'>35.5 <text>元起</text></text>
+        </view>
+        <text class='cinemaaddr'>{{item.addr}}</text>
+        <view class='cinemaDate'>
+          <text>座</text>
+          <text>4DX厅</text>
+          <text>小吃</text>
+          <text>改签</text>
+          <text>折扣卡</text>
+        </view>
+        <view class='cinemaTime'>
+          近期场次：
+          <text>17：40</text>
+          <text>18:25</text>
+          <text>19：00</text>
+        </view>
+      </view>
+      <view class='moviedistance'>
+        <text> 1.4km</text>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,11 @@
+input{
+  border: 1px solid darkcyan;
+  width: 12rem;
+ margin: 1rem 4rem;
+ padding: 0.4rem 0.2rem;
+ border-radius: 5px;
+ color: silver;
+}
+button{
+  margin: 0 8rem;
+}

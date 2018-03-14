@@ -1,0 +1,65 @@
+.headerNav{
+  line-height: 1.6rem;
+  border-bottom: 0.01rem solid silver;
+}
+.headerNav text{
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+.cinemalist {
+  margin: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  border-bottom: 0.02rem solid #999;
+}
+.cinemaName {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.cinemaMoney{
+  color: red;
+  font-size: 1rem;
+  padding: 0 0.6rem;
+}
+.cinemaMoney text{
+  font-size: 0.6rem;
+}
+.cinemaTime,
+.moviedistance,
+.cinemaaddr{
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.2rem;
+}
+.cinemaaddr{
+  height: 1.2rem;
+  overflow: hidden;
+}
+.cinemaTime text{
+  padding: 0 0.4rem;
+  border-right: 0.01rem solid #999;
+}
+.cinemaTime text:nth-last-child(1){
+  border: none ;
+}
+.cinemaDate{
+  margin-bottom: 0.4rem;
+}
+.cinemaDate text{
+  font-size: 0.6rem ;
+  padding: 0.2rem ;
+  border: 0.01rem solid #8bd28b;
+  border-radius: 0.1rem;
+  color: #8bd28b;
+  margin-left: 0.2rem;
+}
+.cinemaDate text:nth-last-child(1){
+  border: 0.01rem solid #fba626;
+  color: #fba626;
+}
+.moviedistance{
+  line-height: 7rem;
+}
+

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/logs/logs",
+    "pages/details/details",
+    "pages/cinema/cinema"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dd403b",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "images/dianying2.png",
+        "selectedIconPath": "images/dianying1.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "影院",
+        "iconPath": "images/yingyuan1 (1).png",
+        "selectedIconPath": "images/yingyuan1 (2).png",
+        "selectedColor": "#dd403b"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/mylogo.png",
+        "selectedIconPath": "images/mylogo2.png",
+        "selectedColor": "#dd403b"
+      }
+    ],
+    "selectedColor": "#dd403b",
+    "backgroundColor": "#fff"
+  }
+}
